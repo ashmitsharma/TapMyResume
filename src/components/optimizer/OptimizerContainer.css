@@ -1,0 +1,135 @@
+.optimizer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 15px;
+  min-height: 70vh;
+}
+
+.flow-toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.toggle-button {
+  padding: 15px 30px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 65px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.toggle-button:hover {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+  color: #E66868;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-button.disabled,
+.toggle-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.toggle-button.disabled:hover,
+.toggle-button:disabled:hover {
+  background-color: #fff;
+  border-color: #ccc;
+  color: #666;
+  box-shadow: none;
+}
+
+.toggle-button.active {
+  background-color: #E66868;
+  color: white;
+  border-color: #E66868;
+}
+
+
+
+.flow-content {
+  width: 100%;
+  position: relative;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+  .optimizer-container {
+    padding: 15px 10px;
+  }
+  
+  .flow-toggle-buttons {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  
+  .toggle-button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .flow-toggle-buttons {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .optimizer-container {
+    max-width: 900px;
+    padding: 30px 20px;
+  }
+  
+  .flow-toggle-buttons {
+    max-width: 550px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .optimizer-container {
+    max-width: 1100px;
+    padding: 40px 30px;
+  }
+  
+  .flow-toggle-buttons {
+    max-width: 580px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .optimizer-container {
+    max-width: 1200px;
+    padding: 50px 40px;
+  }
+  
+  .flow-toggle-buttons {
+    max-width: 600px;
+  }
+}
+
+/* Additional styles */
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #666;
+}

@@ -1,0 +1,77 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #000;
+  --accent-color: #E66868;
+  --background-color: #fff;
+  --text-color: #000;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+/* Media Queries */
+/* 320px — 480px: Mobile devices */
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Mobile styles */
+}
+
+/* 481px — 768px: iPads, Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Tablet styles */
+}
+
+/* 769px — 1024px: Small screens, laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Small laptop styles */
+}
+
+/* 1025px — 1200px: Desktops, large screens */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  /* Desktop styles */
+}
+
+/* 1201px and more — Extra large screens, TV */
+@media (min-width: 1201px) {
+  /* Extra large screen styles */
+}

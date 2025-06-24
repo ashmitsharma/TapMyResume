@@ -1,0 +1,630 @@
+.step-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.step-2-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  height: auto;
+  overflow-y: auto;
+}
+
+.step-3-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 450px !important;
+  margin: 0 auto;
+  height: auto;
+  overflow-y: auto;
+}
+
+.job-description-step {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Set specific width/height for large screens */
+@media (min-width: 768px) {
+  .job-description-step {
+    width: 450px;
+    height: 570px;
+    overflow-y: auto;
+  }
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.step-heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Step 1 Styles */
+.resume-options {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.resume-option {
+  flex: 1;
+  background-color: #EBEBEB;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.resume-option.selected {
+  border-color: #E66868;
+}
+
+.upload-area {
+  flex: 1;
+  position: relative;
+}
+
+.upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.upload-icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.file-name {
+  font-size: 12px;
+  margin-top: 5px;
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.app-heading {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.job-description h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.job-description-input {
+  width: 100%;
+  min-height: 150px;
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  resize: vertical;
+  background-color: #EBEBEB;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.submit-button {
+  background-color: #E66868;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #d45454;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.drop-message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.upload-icon {
+  font-size: 24px;
+}
+
+.file-input {
+  display: none;
+}
+
+.resume-option-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #EBEBEB;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.resume-option-button.active {
+  background-color: #e0e0e0;
+  font-weight: 500;
+}
+
+.drop-zone {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #EBEBEB;
+}
+
+.drop-zone.drag-over {
+  background-color: rgba(230, 104, 104, 0.1);
+  border-color: #E66868;
+}
+
+/* Step 2.5 (Almost There) Styles */
+.almost-there {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.premium-message {
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.premium-message p {
+  margin-bottom: 10px;
+}
+
+.premium-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.premium-button {
+  background-color: #E66868;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 60px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.premium-button:hover {
+  background-color: #d45454;
+}
+
+.watermark-link {
+  color: #333;
+  text-decoration: underline;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.watermark-link:hover {
+  color: #E66868;
+}
+
+.back-button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: #666;
+  border-radius: 5px;
+  padding: 8px 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  border-color: #999;
+  color: #333;
+}
+
+/* Step 2 Styles */
+.scores-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.score-box {
+  text-align: center;
+  flex: 1;
+}
+
+.score-label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.score-value {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.current-score .score-value {
+  color: #333;
+}
+
+.potential-score .score-value {
+  color: #E66868;
+}
+
+.missing-keywords {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.keyword-section-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #E66868;
+}
+
+.keyword-section-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #666;
+}
+
+.keyword-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.keyword-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.keyword-checkbox {
+  width: 18px;
+  height: 18px;
+}
+
+.keyword-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.custom-keyword {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.custom-keyword input {
+  flex: 1;
+  height: 40px;
+  background-color: #EBEBEB;
+  border: none;
+  border-radius: 6px;
+  padding: 0 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.add-button {
+  background-color: #E66868;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.step-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.step-actions.centered {
+  justify-content: center;
+}
+
+.back-button {
+  background-color: transparent;
+  border: 1px solid #E66868;
+  color: #E66868;
+  border-radius: 4px;
+  padding: 12px 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.optimize-button {
+  background-color: #E66868;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Paywall Overlay */
+.paywall-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.paywall-content {
+  text-align: center;
+  padding: 30px;
+}
+
+.paywall-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.paywall-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.premium-button {
+  background-color: #E66868;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Step 3 Styles */
+.success-icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0 auto;
+}
+
+
+.success-heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Loading Component Styles */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.loading-animation {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.loading-status {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.success-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.download-button {
+  background-color: #E66868;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.create-another {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #666;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+  .step-container {
+    padding: 20px 15px;
+  }
+  
+  .step-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .resume-options {
+    flex-direction: column;
+  }
+  
+  .job-description h3 {
+    font-size: 18px;
+  }
+  
+  .job-description textarea {
+    height: 120px;
+  }
+  
+  .score-label {
+    font-size: 14px;
+  }
+  
+  .score-value {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .step-container {
+    padding: 25px;
+  }
+  
+  .step-heading {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .step-container {
+    max-width: 650px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .step-container {
+    max-width: 700px;
+  }
+  
+  .step-heading {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .step-container {
+    max-width: 800px;
+    padding: 40px;
+  }
+}

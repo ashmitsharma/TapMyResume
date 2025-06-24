@@ -1,0 +1,69 @@
+.step-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 250px;
+  margin: 30px auto;
+}
+
+.step-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #EBEBEB;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.step-circle.active {
+  background-color: #E66868;
+  border-color: #E66868;
+}
+
+.step-line {
+  flex: 1;
+  height: 2px;
+  background-color: #EBEBEB;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.step-line.active {
+  background-color: #E66868;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+  .step-indicator {
+    max-width: 200px;
+    margin: 20px auto;
+  }
+  
+  .step-circle {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .step-indicator {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .step-indicator {
+    max-width: 350px;
+    margin: 40px auto;
+  }
+  
+  .step-circle {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .step-line {
+    height: 3px;
+  }
+}

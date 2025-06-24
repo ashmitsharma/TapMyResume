@@ -1,0 +1,180 @@
+.hero-section {
+  padding: 60px 0;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-images {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.resume-images img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  line-height: 1.2;
+}
+
+h1 .accent {
+  color: var(--accent-color);
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.hero-content p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  max-width: 90%;
+}
+
+.feature-list {
+  margin-bottom: 30px;
+}
+
+.feature-list li {
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #d45858;
+}
+
+.trust-badges {
+  margin-top: 40px;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+}
+
+.badge-icon {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.badge-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Responsive Styles */
+
+/* 769px — 1024px: Small screens, laptops */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 38px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+  }
+  
+  .feature-list li,
+  .badge-text {
+    font-size: 16px;
+  }
+}
+
+/* 481px — 768px: iPads, Tablets */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-content p {
+    max-width: 100%;
+    margin: 0 auto 25px;
+  }
+  
+  .feature-list {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto 30px;
+  }
+  
+  .trust-badges {
+    max-width: 500px;
+    margin: 40px auto 0;
+    text-align: left;
+  }
+}
+
+/* 320px — 480px: Mobile devices */
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 30px 0;
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  .hero-content p {
+    font-size: 16px;
+  }
+  
+  .feature-list li,
+  .badge-text,
+  .btn-primary {
+    font-size: 16px;
+  }
+  
+  .btn-primary {
+    padding: 12px 25px;
+  }
+}
